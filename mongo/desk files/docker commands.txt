@@ -1,0 +1,17 @@
+docker --version                       --> to check the version
+docker images                          --> to check the images in local
+docker pull nginx                      --> pulls image to local
+docker ps                              --> to check the running containers
+docker ps -a                           --> to check the running +stopped containers
+docker run nginx                       --> to start a image in container
+          - -d                         --> detached mode (container runs as a backed process
+docker create <container>              --> creates a container from the image
+docker stop <container>                --> stops the running container
+docker start <container>               --> starts the stopped container
+docker pause <container>               --> pauses the container
+docker unpause <container>             --> unpauses the container
+docker rm <container>                  --> delete the container
+docker rm $(docker ps -a -q)           --> deletes all the containers
+docker rmi <image >                    --> deletes images
+docker rmi $(docker images -q)         --> deletes all the images
+docker exec -it <container> /bin/bash  --> log into a container
